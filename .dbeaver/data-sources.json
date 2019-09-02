@@ -1,0 +1,58 @@
+{
+	"folders": {},
+	"connections": {
+		"mysql5-16cf210c121-60cc936a90a4b07b": {
+			"provider": "mysql",
+			"driver": "mysql5",
+			"name": "MySQL - manage",
+			"save-password": true,
+			"read-only": false,
+			"configuration": {
+				"host": "localhost",
+				"port": "3306",
+				"database": "manage",
+				"url": "jdbc:mysql://localhost:3306/manage",
+				"home": "C:\\Program Files\\MySQL\\MySQL Server 5.6",
+				"type": "dev",
+				"handlers": {
+					"ssh_tunnel": {
+						"type": "TUNNEL",
+						"enabled": false,
+						"save-password": true,
+						"properties": {
+							"sshConnectTimeout": "10000",
+							"port": "22",
+							"keyPath": "",
+							"implementation": "jsch",
+							"host": "",
+							"authType": "PASSWORD"
+						}
+					},
+					"socks_proxy": {
+						"type": "PROXY",
+						"enabled": false,
+						"save-password": true,
+						"properties": {
+							"socks-host": "",
+							"socks-port": "1080"
+						}
+					},
+					"mysql_ssl": {
+						"type": "CONFIG",
+						"enabled": false,
+						"save-password": true,
+						"properties": {
+							"ssl.public.key.retrieve": "false",
+							"ssl.verify.server": "true",
+							"ssl.client.cert": "",
+							"ssl.client.key": "",
+							"ssl.ca.cert": "",
+							"ssl.cipher.suites": "",
+							"ssl.require": "false"
+						}
+					}
+				}
+			}
+		}
+	}
+}
