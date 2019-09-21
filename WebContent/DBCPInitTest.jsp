@@ -9,23 +9,23 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<%
-		Connection conn = null;
-		try {
-			/* String jdbcDriver = "jdbc:apache:commons:dbcp:manage"; */
-			conn = ConnectionProvider.getConnection();
-			if (conn != null) {
-				out.print("커넥션 풀에 연결 되었습니다.");
-			} else {
-				out.print("커넥션 풀에 연결 실패하였습니다.");
-			}
-		} catch(Exception e) {
-			e.printStackTrace();
-		} finally {
-			if (conn != null) {
-				conn.close();
-			}
+<%
+	Connection conn = null;
+	try {
+		/* String jdbcDriver = "jdbc:apache:commons:dbcp:manage"; */
+		conn = ConnectionProvider.getConnection();
+		if (conn != null) {
+			out.print("커넥션 풀에 연결 되었습니다.");
+		} else {
+			out.print("커넥션 풀에 연결 실패하였습니다.");
 		}
-	%>
+	} catch(Exception e) {
+		e.printStackTrace();
+	} finally {
+		if (conn != null) {
+			conn.close();
+		}
+	}
+%>
 </body>
 </html>
