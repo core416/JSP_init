@@ -1,5 +1,10 @@
-# Created by https://www.gitignore.io/api/java,windows,eclipse
-# Edit at https://www.gitignore.io/?templates=java,windows,eclipse
+
+# Created by https://www.gitignore.io/api/java,dbeaver,windows,eclipse
+# Edit at https://www.gitignore.io/?templates=java,dbeaver,windows,eclipse
+
+### DBeaver ###
+# ide config file
+.dbeaver-data-sources*.xml
 
 ### Eclipse ###
 .metadata
@@ -60,10 +65,10 @@ local.properties
 
 ### Eclipse Patch ###
 # Eclipse Core
-.project
+# .project
 
 # JDT-specific (Eclipse Java Development Tools)
-.classpath
+# .classpath
 
 # Annotation Processing
 .apt_generated
@@ -84,7 +89,7 @@ local.properties
 .mtj.tmp/
 
 # Package Files #
-# *.jar
+*.jar
 *.war
 *.nar
 *.ear
@@ -121,4 +126,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.gitignore.io/api/java,windows,eclipse
+# End of https://www.gitignore.io/api/java,dbeaver,windows,eclipse
